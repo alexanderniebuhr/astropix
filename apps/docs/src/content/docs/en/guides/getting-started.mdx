@@ -1,0 +1,76 @@
+---
+title: Getting Started
+description: A guide in my new Starlight docs site.
+sidebar:
+  # Set a custom label for the link
+  # label: Custom sidebar label
+  # Set a custom order for the link (lower numbers are displayed higher up)
+  order: 0
+  # Add a badge to the link
+  badge:
+    text: New
+    variant: tip
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+<Tabs>
+  <TabItem label="npm">
+		```sh "@moonrepo/cli" title="Installing dependencies…"
+		npm install --save-dev @moonrepo/cli
+		```
+	</TabItem>
+	<TabItem label="pnpm">
+		```sh "@moonrepo/cli" title="Installing dependencies…"
+		pnpm add --save-dev @moonrepo/cli
+
+		# If using workspaces
+		pnpm add --save-dev -w @moonrepo/cli
+		```
+	</TabItem>
+	<TabItem label="Bun">
+		```sh "@moonrepo/cli" title="Installing dependencies…"
+		bun install --dev @moonrepo/cli
+		```
+	</TabItem>
+	<TabItem label="Yarn">
+		```sh "@moonrepo/cli" title="Installing dependencies…"
+		yarn add --dev @moonrepo/cli
+		```
+	</TabItem>
+	<TabItem label="Yarn (classic)">
+		```sh "@moonrepo/cli" title="Installing dependencies…"
+		yarn add --dev @moonrepo/cli
+
+		# If using workspaces
+		yarn add --dev -W @moonrepo/cli
+		```
+	</TabItem>
+</Tabs>
+
+Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
+Writing a good guide requires thinking about what your users are trying to do.
+
+:::tip[Did you know?]
+Starlight is a documentation website toolkit built with [Astro](https://astro.build/). You can get started with this command:
+
+```sh
+npm create astro@latest -- --template starlight
+```
+:::
+
+<LinkCard
+  title="Customizing Starlight"
+  description="Learn how to make your Starlight site your own with custom styles, fonts, and more."
+  href="/guides/customization/"
+/>
+
+<CardGrid>
+  <LinkCard title="Authoring Markdown" href="/guides/authoring-content/" />
+  <LinkCard title="Components" href="/guides/components/" />
+</CardGrid>
+
+## Further reading
+
+- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework

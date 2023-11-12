@@ -1,0 +1,9 @@
+{
+	"extends": "astro/tsconfigs/strictest",
+	"include": [
+		"../../types/**/*"
+	],
+	"compilerOptions": {
+		"outDir": "../../.moon/cache/types/apps/docs"
+	}
+}

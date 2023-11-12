@@ -1,0 +1,67 @@
+---
+title: 入门指南
+description: 我的新 Starlight 文档站点指南。
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+
+<Tabs>
+  <TabItem label="npm">
+		```sh "@moonrepo/cli" title="安装依赖…"
+		npm install --save-dev @moonrepo/cli
+		```
+	</TabItem>
+	<TabItem label="pnpm">
+		```sh "@moonrepo/cli" title="安装依赖…"
+		pnpm add --save-dev @moonrepo/cli
+
+		# 如果使用工作区
+		pnpm add --save-dev -w @moonrepo/cli
+		```
+	</TabItem>
+	<TabItem label="Bun">
+		```sh "@moonrepo/cli" title="安装依赖…"
+		bun install --dev @moonrepo/cli
+		```
+	</TabItem>
+	<TabItem label="Yarn">
+		```sh "@moonrepo/cli" title="安装依赖…"
+		yarn add --dev @moonrepo/cli
+		```
+	</TabItem>
+	<TabItem label="Yarn (经典)">
+		```sh "@moonrepo/cli" title="安装依赖…"
+		yarn add --dev @moonrepo/cli
+
+		# 如果使用工作区
+		yarn add --dev -W @moonrepo/cli
+		```
+	</TabItem>
+</Tabs>
+
+指南引导用户完成他们想要完成的特定任务，通常包含一系列步骤。
+编写好的指南需要考虑用户试图做什么。
+
+:::tip[你知道吗？]
+Starlight 是一个使用 [Astro](https://astro.build/) 构建的文档网站工具包。你可以用以下命令开始：
+
+```sh
+npm create astro@latest -- --template starlight
+```
+:::
+
+<LinkCard
+  title="自定义 Starlight"
+  description="了解如何用自定义风格、字体等使你的 Starlight 站点个性化。"
+  href="/guides/customization/"
+/>
+
+<CardGrid>
+  <LinkCard title="编写 Markdown" href="/guides/authoring-content/" />
+  <LinkCard title="组件" href="/guides/components/" />
+</CardGrid>
+
+## 推荐阅读
+
+- 阅读 Diátaxis 框架中的[关于如何指南](https://diataxis.fr/how-to-guides/)

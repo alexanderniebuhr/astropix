@@ -1,0 +1,52 @@
+# yaml-language-server: $schema=https://moonrepo.dev/schemas/project.json
+
+language: "typescript"
+type: "library"
+
+project:
+  name: "astropix"
+  description: "A repo management tool."
+  channel: "#maintainers"
+  owner: "alexanderniebuhr"
+  maintainers: ["alexanderniebuhr"]
+
+fileGroups:
+  configs:
+    # Project configs
+    - 'tsconfig.json'
+    - 'tsconfig.*.json'
+    # Root configs (extended from only)
+    - "/.prototools"
+  sources:
+    - "src/**/*"
+    # Type declarations
+    - '/types/**/*'
+
+tasks:
+  typecheck:
+    command: "tsc"
+    args:
+      # Use incremental builds with project references
+      - '--build'
+      # Always use pretty output
+      - '--pretty'
+      # Use verbose logging to see affected projects
+      - '--verbose'
+    inputs:
+      - "@files(sources)"
+      - "@files(configs)"
+  build:
+    command: "tsc"
+    args:
+      # Use incremental builds with project references
+      - '--build'
+      # Always use pretty output
+      - '--pretty'
+      # Use verbose logging to see affected projects
+      - '--verbose'
+      - 'tsconfig.build.json'
+    inputs:
+      - "@files(sources)"
+      - "@files(configs)"
+    outputs:
+      - "dist"

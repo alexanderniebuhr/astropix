@@ -1,0 +1,30 @@
+{
+  "repository": "https://github.com/alexanderniebuhr/astropix",
+  "rootDir": "./apps/docs",
+  "dashboard": {
+    "url": "https://docs.a.stro.pictures/i18n"
+  },
+  "defaultLocale": {
+    "label": "English",
+    "lang": "en",
+    "content": {
+      "location": "src/content/docs/en/**/*.{md,mdx}"
+    }
+  },
+  "locales": [
+    {
+      "label": "Português",
+      "lang": "pt",
+      "content": {
+        "location": "src/content/docs/pt/**/*.{md,mdx}"
+      }
+    },
+    {
+      "label": "Spanish",
+      "lang": "es",
+      "content": {
+        "location": "src/content/docs/es/**/*.{md,mdx}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "@alexanderniebuhr/tsconfig/tsconfig.base.json",
+	"compilerOptions": {
+		"outDir": "dist",
+		"rootDir": "src",
+		"tsBuildInfoFile": "../../.moon/cache/types/packages/astropix/tsconfig.tsbuildinfo",
+		"noEmitOnError": true,
+		"paths": {
+			"@alexanderniebuhr/tsconfig/*": [
+				"../../tools/tsconfig/*"
+			]
+		}
+	},
+	"include": [
+		"../../tools/tsconfig/**/*",
+		"../../types/**/*",
+		"src/**/*"
+	],
+	"references": [
+		{
+			"path": "../../tools/tsconfig"
+		}
+	]
+}
