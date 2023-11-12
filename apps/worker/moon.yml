@@ -1,0 +1,46 @@
+# yaml-language-server: $schema=https://moonrepo.dev/schemas/project.json
+
+type: "application"
+language: "typescript"
+
+project:
+  name: "worker"
+  description: "A repo management tool."
+  channel: "#maintainers"
+  owner: "alexanderniebuhr"
+  maintainers: ["alexanderniebuhr"]
+
+fileGroups:
+  configs:
+    - "wrangler.toml"
+    - "/.prototools"
+  sources:
+    - "src/**/*"
+
+tasks:
+  typecheck:
+    command: "tsc --build"
+    inputs:
+      - "@files(sources)"
+      - "@files(configs)"
+  dev:
+    command: "wrangler dev"
+    local: true
+    options:
+      allowFailure: true
+    inputs:
+      - "@files(sources)"
+      - "@files(configs)"
+  # format:
+  #   command: "prettier --check ."
+  # lint:
+  #   command: "eslint --no-error-on-unmatched-pattern ."
+  # test:
+  #   command: "jest --passWithNoTests ."
+  # build:
+  #   # https://moonrepo.dev/docs/create-task
+  #   command: "babel src --out-dir build"
+  #   inputs:
+  #     - "src/**/*"
+  #   outputs:
+  #     - "build"
