@@ -1,4 +1,4 @@
-# a.stro.images
+# Astropix: Monorepository
 
 ### Setup
 
