@@ -2,6 +2,11 @@ name = "a_stro_images"
 main = "./src/index.ts"
 compatibility_date = "2023-11-08"
 
+workers_dev = false
+routes = [
+	{ pattern = "a.stro.pictures", custom_domain = true },
+]
+
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
 # Docs: https://developers.cloudflare.com/workers/platform/environment-variables

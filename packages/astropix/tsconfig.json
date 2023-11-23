@@ -2,25 +2,18 @@
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"extends": "@alexanderniebuhr/tsconfig/tsconfig.base.json",
 	"compilerOptions": {
-		"tsBuildInfoFile": "../../.moon/cache/types/apps/worker/tsconfig.tsbuildinfo",
-		"moduleResolution": "Bundler",
-		"module": "ESNext",
-		"noEmit": true,
-		"types": [
-			"@cloudflare/workers-types"
-		],
-		"resolveJsonModule": true,
+		"emitDeclarationOnly": true,
 		"paths": {
 			"@alexanderniebuhr/tsconfig/*": [
 				"../../tools/tsconfig/*"
 			]
 		},
-		"outDir": "../../.moon/cache/types/apps/worker"
+		"outDir": "../../.moon/cache/types/packages/astropix"
 	},
 	"include": [
 		"../../tools/tsconfig/**/*",
 		"../../types/**/*",
-		"src/**/*, *.ts"
+		"src/**/*"
 	],
 	"references": [
 		{

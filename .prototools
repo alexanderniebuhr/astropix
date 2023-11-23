@@ -1,6 +1,6 @@
-moon = "1.16.1"
-node = "20.9.0"
-pnpm = "8.10.2"
+moon = "1.17.3"
+node = "21.2.0"
+pnpm = "8.10.5"
 
 [plugins]
 moon = "source:https://raw.githubusercontent.com/moonrepo/moon/master/proto-plugin.toml"

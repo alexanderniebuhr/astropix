@@ -1,0 +1,16 @@
+{
+  "name": "@alexanderniebuhr/tsconfig",
+  "version": "0.0.1",
+	"description": "alexanderniebuhr's tsconfig.json's",
+  "keywords": [
+    "typescript",
+    "tsconfig"
+	],
+  "private": true,
+  "files": ["tsconfig.base.json"],
+	"author": {
+		"name": "Alexander Niebuhr",
+		"url": "https://github.com/alexanderniebuhr"
+	},
+  "license": "MIT"
+}

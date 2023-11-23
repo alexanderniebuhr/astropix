@@ -15,6 +15,7 @@ projects:
   globs:
     - "apps/*"
     - "packages/*"
+    - "tools/*"
   # sources:
   # www: 'www'
 

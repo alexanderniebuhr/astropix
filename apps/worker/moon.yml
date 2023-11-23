@@ -31,6 +31,9 @@ tasks:
     inputs:
       - "@files(sources)"
       - "@files(configs)"
+  deploy:
+    command: "wrangler deploy src/index.ts"
+    platform: system
   # format:
   #   command: "prettier --check ."
   # lint:
