@@ -1,5 +1,5 @@
-import { defineConfig } from 'astro/config'
 import starlight from '@astrojs/starlight'
+import { defineConfig } from 'astro/config'
 import starlightLinksValidator from 'starlight-links-validator'
 
 export default defineConfig({
@@ -15,12 +15,15 @@ export default defineConfig({
 				{
 					label: 'Guides',
 					translations: {
-						'zh-CN': 'Guias',
+						'zh-CN': '指南',
 					},
 					autogenerate: { directory: 'guides' },
 				},
 				{
 					label: 'Reference',
+					translations: {
+						'zh-CN': '参考',
+					},
 					autogenerate: { directory: 'reference' },
 				},
 			],
@@ -35,16 +38,13 @@ export default defineConfig({
       },
 			defaultLocale: 'en',
 			locales: {
-        // English docs in `src/content/docs/en/`
         en: {
           label: 'English',
         },
-        // Simplified Chinese docs in `src/content/docs/zh-cn/`
         'zh-cn': {
           label: '简体中文',
           lang: 'zh-CN',
         },
-        // Arabic docs in `src/content/docs/ar/`
         de: {
           label: 'Deutsch',
         },
