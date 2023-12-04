@@ -12,28 +12,28 @@ importers:
         specifier: workspace:*
         version: link:tools/tsconfig
       '@biomejs/biome':
-        specifier: 1.4.1
+        specifier: ^1.4.1
         version: 1.4.1
       typescript:
-        specifier: 5.3.2
+        specifier: ^5.3.2
         version: 5.3.2
 
   apps/docs:
     dependencies:
       '@astrojs/starlight':
-        specifier: 0.13.0
+        specifier: ^0.13.0
         version: 0.13.0(astro@3.6.0)
       '@lunariajs/core':
-        specifier: 0.0.18
+        specifier: ^0.0.18
         version: 0.0.18
       astro:
-        specifier: 3.6.0
+        specifier: ^3.6.0
         version: 3.6.0(typescript@5.3.2)
       sharp:
-        specifier: 0.32.6
+        specifier: ^0.32.6
         version: 0.32.6
       starlight-links-validator:
-        specifier: 0.4.2
+        specifier: ^0.4.2
         version: 0.4.2(@astrojs/starlight@0.13.0)(astro@3.6.0)
 
   apps/worker:
@@ -42,29 +42,29 @@ importers:
         specifier: workspace:*
         version: link:../../tools/tsconfig
       '@cloudflare/workers-types':
-        specifier: 4.20231121.0
+        specifier: ^4.20231121.0
         version: 4.20231121.0
       typescript:
-        specifier: 5.3.2
+        specifier: ^5.3.2
         version: 5.3.2
       wrangler:
-        specifier: 3.18.0
+        specifier: ^3.18.0
         version: 3.18.0
 
   packages/astropix:
     dependencies:
       tslib:
-        specifier: 2.6.2
+        specifier: ^2.6.2
         version: 2.6.2
     devDependencies:
       '@alexanderniebuhr/tsconfig':
         specifier: workspace:*
         version: link:../../tools/tsconfig
       astro:
-        specifier: 3.6.0
+        specifier: ^3.6.0
         version: 3.6.0(typescript@5.3.2)
       typescript:
-        specifier: 5.3.2
+        specifier: ^5.3.2
         version: 5.3.2
 
   tools/tsconfig: {}
@@ -1355,13 +1355,6 @@ packages:
     resolution: {integrity: sha512-XJavIpZqiXID5Yxnxv3RUDKTN5b81ddNC3ecsA0SoFXz/QU8OGBwZGMomiq0zw+uuqbL/krztv/DINAQ/EV4gg==}
     dependencies:
       undici-types: 5.26.5
-    dev: true
-
-  /@types/node@20.9.0:
-    resolution: {integrity: sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==}
-    dependencies:
-      undici-types: 5.26.5
-    dev: false
 
   /@types/parse5@6.0.3:
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==}
@@ -1369,7 +1362,7 @@ packages:
   /@types/sax@1.2.7:
     resolution: {integrity: sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==}
     dependencies:
-      '@types/node': 20.9.0
+      '@types/node': 20.10.3
     dev: false
 
   /@types/trusted-types@2.0.7:
