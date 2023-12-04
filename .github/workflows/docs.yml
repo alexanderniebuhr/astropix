@@ -16,7 +16,7 @@ jobs:
       - uses: moonrepo/setup-toolchain@v0.2.0
         with:
           auto-install: true
-      - run: "moon docs:build"
+      - run: "moon ci docs:build"
       - uses: cloudflare/wrangler-action@v3.3.2
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
