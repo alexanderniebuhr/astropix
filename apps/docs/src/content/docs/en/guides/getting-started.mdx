@@ -9,38 +9,53 @@ sidebar:
 ---
 
 import { Tabs, TabItem } from '@astrojs/starlight/components';
-import { LinkCard, CardGrid } from '@astrojs/starlight/components';
 
 <Tabs>
   <TabItem label="npm">
-		```sh "@moonrepo/cli" title="Installing dependencies…"
-		npm install --save-dev astropix
-		```
-	</TabItem>
-	<TabItem label="pnpm">
-		```sh "@moonrepo/cli" title="Installing dependencies…"
-		pnpm add --save-dev astropix
+    ```sh "@moonrepo/cli" title="Installing dependencies…"
+    npm install --save-dev astropix
+    ```
+  </TabItem>
+  <TabItem label="pnpm">
+    ```sh "@moonrepo/cli" title="Installing dependencies…"
+    pnpm add --save-dev astropix
 
-		# If using workspaces
-		pnpm add --save-dev -w astropix
-		```
-	</TabItem>
-	<TabItem label="Bun">
-		```sh "@moonrepo/cli" title="Installing dependencies…"
-		bun install --dev astropix
-		```
-	</TabItem>
-	<TabItem label="Yarn">
-		```sh "@moonrepo/cli" title="Installing dependencies…"
-		yarn add --dev astropix
-		```
-	</TabItem>
-	<TabItem label="Yarn (classic)">
-		```sh "@moonrepo/cli" title="Installing dependencies…"
-		yarn add --dev astropix
+    # If using workspaces
+    pnpm add --save-dev -w astropix
+    ```
+  </TabItem>
+  <TabItem label="Bun">
+    ```sh "@moonrepo/cli" title="Installing dependencies…"
+    bun install --dev astropix
+    ```
+  </TabItem>
+  <TabItem label="Yarn">
+    ```sh "@moonrepo/cli" title="Installing dependencies…"
+    yarn add --dev astropix
+    ```
+  </TabItem>
+  <TabItem label="Yarn (classic)">
+    ```sh "@moonrepo/cli" title="Installing dependencies…"
+    yarn add --dev astropix
 
-		# If using workspaces
-		yarn add --dev -W astropix
-		```
-	</TabItem>
+    # If using workspaces
+    yarn add --dev -W astropix
+    ```
+  </TabItem>
 </Tabs>
+
+## Usage
+
+Astropix is a Integration for Astro projects. To use it, you need to add it in your project config:
+
+```js ins={3,6-8}
+// astro.config.mjs
+import { defineConfig } from 'astro/config';
+import astropix from "astropix";
+
+export default defineConfig({
+  integrations: [
+    astropix()
+  ]
+})
+```
