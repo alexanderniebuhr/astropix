@@ -9,9 +9,6 @@ on:
 jobs:
   docs:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        index: [0, 1]
     steps:
       - uses: actions/checkout@v4.1.1
         with:
@@ -19,7 +16,7 @@ jobs:
       - uses: moonrepo/setup-toolchain@v0.2.0
         with:
           auto-install: true
-      - run: "moon ci docs:build --job ${{ matrix.index }} --jobTotal 2"
+      - run: "moon docs:build"
       - uses: cloudflare/wrangler-action@v3.3.2
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
