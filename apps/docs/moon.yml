@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://moonrepo.dev/schemas/project.json
+
+type: "application"
+language: "typescript"
+
+project:
+  name: "docs"
+  description: "Docs"
+  channel: "#maintainers"
+  owner: "alexanderniebuhr"
+  maintainers: ["alexanderniebuhr"]
+
+fileGroups:
+  configs:
+    - "astro.config.mjs"
+    - "/.prototools"
+  sources:
+    - "src/**/*"
+
+tasks:
+  check:
+    command: "astro check"
+    inputs:
+      - "@files(sources)"
+      - "@files(configs)"
+  build:
+    command: "astro build"
+    inputs:
+      - "@files(sources)"
+      - "@files(configs)"
+    # deps:
+    #   - '~:check'
