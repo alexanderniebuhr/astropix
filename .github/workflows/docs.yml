@@ -16,7 +16,9 @@ jobs:
       - uses: moonrepo/setup-toolchain@a58facee196d41231c97018b7348faf2f0d62aef # v0.2.0
         with:
           auto-install: true
-      - run: "moon ci docs:build"
+      - run: "moon --color --log trace ci docs:build"
+        env:
+          MOONBASE_SECRET_KEY: ${{ secrets.MOONBASE_SECRET_KEY }}
       - uses: cloudflare/wrangler-action@5e8484995321734668f14981c316aa9188d76ed1 # v3.3.2
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
