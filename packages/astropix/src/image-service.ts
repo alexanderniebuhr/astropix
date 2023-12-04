@@ -23,11 +23,11 @@ const service: ExternalImageService = {
 		for (const [param, key] of Object.entries(params)) {
 			options[key] && searchParams.append(param, options[key].toString());
 		}
-		Object.entries(params).forEach(([param, key]) => {
+		for (const [param, key] of Object.entries(params)) {
 			options[key] && searchParams.append(param, options[key].toString());
-		});
+		}
 
-		const serviceUrl = "https://a.stro.pictures"
+		const serviceUrl = "https://a.stro.pictures";
 		const imageEndpoint = joinPaths(import.meta.env.BASE_URL, "/_image");
 		return `${serviceUrl}${imageEndpoint}?${searchParams}`;
 	},
