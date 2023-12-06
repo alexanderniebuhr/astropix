@@ -7,6 +7,7 @@
 	"references": [],
 	"compilerOptions": {
 		"tsBuildInfoFile": "../../.moon/cache/types/tools/tsconfig.tsbuildinfo",
-		"outDir": "../../.moon/cache/types/tools/tsconfig"
+		"outDir": "../../.moon/cache/types/tools/tsconfig",
+		"paths": {}
 	}
 }
