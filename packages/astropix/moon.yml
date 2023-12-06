@@ -10,6 +10,11 @@ project:
   owner: "alexanderniebuhr"
   maintainers: ["alexanderniebuhr"]
 
+owners:
+  requiredApprovals: 1
+  paths:
+    '*': ['@alexanderniebuhr']
+
 fileGroups:
   configs:
     # Project configs

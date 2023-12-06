@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           fetch-depth: 0
-      - uses: moonrepo/setup-toolchain@a58facee196d41231c97018b7348faf2f0d62aef # v0.2.0
+      - uses: moonrepo/setup-toolchain@v0.2.1
         with:
           auto-install: true
       - run: "moon --color --log trace ci docs:build"

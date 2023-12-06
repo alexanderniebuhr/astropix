@@ -31,3 +31,9 @@ vcs:
   # local branch against. For git, this is is typically "master" or "main",
   # and must include the remote prefix (before /).
   defaultBranch: "main"
+
+codeowners:
+  syncOnRun: true
+  globalPaths:
+    # GitHub folder at the root
+    '/.github/': ['@alexanderniebuhr']

@@ -10,6 +10,11 @@ project:
   owner: "alexanderniebuhr"
   maintainers: ["alexanderniebuhr"]
 
+owners:
+  requiredApprovals: 2
+  paths:
+    '*': ['@alexanderniebuhr']
+
 fileGroups:
   configs:
     - "wrangler.toml"
