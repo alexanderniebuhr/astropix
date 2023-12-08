@@ -14,13 +14,14 @@ jobs:
         with:
           fetch-depth: 0
       - uses: moonrepo/setup-toolchain@0e0303e01e1006eb33278709d47292908525f24c # v0.2.1
+        id: build
         with:
           auto-install: true
-      - run: "moon --color --log trace ci docs:build"
+      - run: |
+          moon --color --log trace ci docs:build
         env:
           MOONBASE_SECRET_KEY: ${{ secrets.MOONBASE_SECRET_KEY }}
       - uses: "moonrepo/run-report-action@d00ab311fde5366a4a5194afae6e87e7c4b0704c" # v1.5.1
-        if: success() || failure()
         with:
           access-token: ${{ secrets.GITHUB_TOKEN }}
       - uses: cloudflare/wrangler-action@5e8484995321734668f14981c316aa9188d76ed1 # v3.3.2
