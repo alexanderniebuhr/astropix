@@ -13,13 +13,13 @@ jobs:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           fetch-depth: 0
-      - uses: moonrepo/setup-toolchain@v0.2.1
+      - uses: moonrepo/setup-toolchain@0e0303e01e1006eb33278709d47292908525f24c # v0.2.1
         with:
           auto-install: true
       - run: "moon --color --log trace ci docs:build"
         env:
           MOONBASE_SECRET_KEY: ${{ secrets.MOONBASE_SECRET_KEY }}
-      - uses: "moonrepo/run-report-action@v1.5.1"
+      - uses: "moonrepo/run-report-action@d00ab311fde5366a4a5194afae6e87e7c4b0704c" # v1.5.1
         if: success() || failure()
         with:
           access-token: ${{ secrets.GITHUB_TOKEN }}
