@@ -42,8 +42,8 @@ importers:
         specifier: workspace:*
         version: link:../../tools/tsconfig
       '@cloudflare/workers-types':
-        specifier: 4.20231121.0
-        version: 4.20231121.0
+        specifier: 4.20231218.0
+        version: 4.20231218.0
       typescript:
         specifier: 5.3.3
         version: 5.3.3
@@ -532,8 +532,8 @@ packages:
     dev: true
     optional: true
 
-  /@cloudflare/workers-types@4.20231121.0:
-    resolution: {integrity: sha512-+kWfpCkqiepwAKXyHoE0gnkPgkLhz0/9HOBIGhHRsUvUKvhUtm3mbqqoGRWgF1qcjzrDUBbrrOq4MYHfFtc2RA==}
+  /@cloudflare/workers-types@4.20231218.0:
+    resolution: {integrity: sha512-Vs1FKjfUjXYGbCsXzkl+ITp0Iyb6QiW6+vTERTNThC+v96T0IvPVAioH4tT20rXwoxAfxh380mAaxYtTrJUNVg==}
     dev: true
 
   /@ctrl/tinycolor@3.6.1:
