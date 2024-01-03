@@ -10,7 +10,7 @@
 		"url": "https://github.com/alexanderniebuhr"
 	},
 	"license": "MIT",
-	"packageManager": "pnpm@8.11.0",
+	"packageManager": "pnpm@8.14.0",
 	"engines": {
 		"node": "21.4.0"
 	},
