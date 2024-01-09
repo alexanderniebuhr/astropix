@@ -4,6 +4,6 @@
     "@alexanderniebuhr/tsconfig": "workspace:*",
     "@cloudflare/workers-types": "4.20231218.0",
     "typescript": "5.3.3",
-    "wrangler": "3.18.0"
+    "wrangler": "3.19.0"
   }
 }
