@@ -3,8 +3,9 @@
 ### Setup
 
 ```sh
-pnpm update -i -r --latest
 moon setup && moon sync projects && moon sync codeowners && moon sync hooks
+
+pnpm update -i -r --latest
 ```
 
 TYPECHECK
