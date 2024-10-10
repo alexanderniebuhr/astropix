@@ -10,7 +10,7 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      - uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v4.2.1
         with:
           fetch-depth: 0
       - uses: moonrepo/setup-toolchain@40bbd0f4d912b24d4d3047299b6b5900f349e6da # v0.3.0
