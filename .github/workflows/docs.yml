@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           fetch-depth: 0
-      - uses: moonrepo/setup-toolchain@40bbd0f4d912b24d4d3047299b6b5900f349e6da # v0.3.0
+      - uses: moonrepo/setup-toolchain@261c62cb5b0f580c7be7c8cd0f023a2e96756095 # v0.6.4
         id: build
         with:
           auto-install: true
