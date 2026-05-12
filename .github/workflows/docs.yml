@@ -21,7 +21,7 @@ jobs:
           moon --color --log trace ci docs:build
         env:
           MOONBASE_SECRET_KEY: ${{ secrets.MOONBASE_SECRET_KEY }}
-      - uses: "moonrepo/run-report-action@d00ab311fde5366a4a5194afae6e87e7c4b0704c" # v1.5.1
+      - uses: "moonrepo/run-report-action@bbe7e99bf2aca819ec660ec01fc59d84bdd492d6" # v1.10.0
         with:
           access-token: ${{ secrets.GITHUB_TOKEN }}
       - uses: cloudflare/wrangler-action@a8be0ea72a399752dd2735fa16ea0d424f2335ca # v3.4.0
